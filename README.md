@@ -10,20 +10,20 @@ https://gobot.io/blog/2018/04/20/hello-tello-hacking-drones-with-go
 ## How to install
 You can install stable version from PyPI.
 ```
-$ pip install tellopy
+ pip install tellopy
 ```
 Or install from the source code.
 ```
-$ git clone https://github.com/hanyazou/TelloPy 
-$ cd TelloPy
-$ python setup.py bdist_wheel
-$ pip install dist/tellopy-*.dev*.whl --upgrade
+ git clone https://github.com/hanyazou/TelloPy 
+ cd TelloPy
+ python setup.py bdist_wheel
+ pip install dist/tellopy-*.dev*.whl --upgrade
 ```
 
 ## Documents
 Please see the API docstring.
 ```
-$ python
+ python
 >>> import tellopy
 >>> help(tellopy)
 Help on package tellopy:
@@ -37,16 +37,16 @@ You can find basic usage of this package in example code in the examples folder.
 This example let Tello take off. Tello will land automatically after a few seconds.
 
 ```
-$ python -m tellopy.examples.simple_takeoff
+ python -m tellopy.examples.simple_takeoff
 ```
 
 ### video_effect
 Filter and display the realtime video stream from Tello.
 ```
-$ pip install av
-$ pip install opencv-python
-$ pip install image
-$ python -m tellopy.examples.video_effect
+ pip install av
+ pip install opencv-python
+ pip install image
+ python -m tellopy.examples.video_effect
 ```
 ![photo](files/video_effect.jpg)
 
@@ -54,11 +54,11 @@ $ python -m tellopy.examples.video_effect
 You can use PS3/PS4/XONE joystick to controll Tello.
 (see my video https://www.youtube.com/watch?v=MWdNFRdRuj8)
 ```
-$ pip install av
-$ pip install opencv-python
-$ pip install image
-$ pip install pygame
-$ python -m tellopy.examples.joystick_and_video
+ pip install av
+ pip install opencv-python
+ pip install image
+ pip install pygame
+ python -m tellopy.examples.joystick_and_video
 
 ```
 ![photo](files/joystick_and_video.png)
